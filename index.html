@@ -17,6 +17,8 @@
 
         <!-- Stuff loading before body -->
         <script src="js/vendor/modernizr.js"></script>
+        <script src="http://use.typekit.net/atx6cib.js"></script>
+        <script>try{Typekit.load();}catch(e){}</script>
 
     </head>
 
@@ -24,18 +26,54 @@
 
         <!-- body content here -->
         <div id="wrapper">
+            <div class="contain-to-grid sticky show-for-medium-only">
+                <nav class="top-bar" data-topbar role="navigation" data-options="sticky_on: large">
+                    <ul class="title-area">
+                        <li class="name">
+                        <h1><a href="#"><img src="img/logo.png" alt="DABCI" /></a></h1>
+                        </li>
+                        <!-- Remove the class "menu-icon" to get rid of menu icon. Take out "Menu" to just have icon alone -->
+                        <li class="toggle-topbar menu-icon"><a href="#"><span>Menu</span></a></li>
+                    </ul>
+
+                    <section class="top-bar-section">
+                        <ul class="right">
+                            <li class="active"><a href="#">HOME</a></li>
+                            <li class=""><a href="#">ABOUT</a></li>
+                            <li class=""><a href="#">CALENDAR</a></li>
+                            <li class="has-dropdown">
+                                <a href="#">PROGRAMS</a>
+                                <ul class="dropdown">
+                                    <li class=""><a href="#">100 Hour Certification</a></li>
+                                    <li class=""><a href="#">300 Hour Diplomate</a></li>
+                                    <li class=""><a href="#">DOT Testing</a></li>
+                                </ul>
+                            </li>
+                            <li class=""><a href="#">PRACTITIONERS</a></li>
+                        </ul>
+                    </section>
+                </nav>
+            </div>
+
+            <div class="row show-for-small-only">
+                <div id="brand-mobile" class="small-12 columns">
+                    <!-- Brand area -->
+                    <img src="img/logo.png" alt="DABCI | Diplomate of the American Board of Chiropractic Internists" />
+                </div>
+            </div>
             <!-- Add in sticky nav bits for mobile only-->
 
-            <div class="row small-collapse">
-                <div class="small-12 medium-6 columns">
+            <div class="row small-collapse show-for-medium-up">
+                <div class="medium-6 columns">
                     <div class="row">
-                        <div id="brand" class="small-12 columns"
-                            <p>Brand</p>
+                        <div id="brand" class="small-12 columns">
+                            <!-- Brand area -->
+                            <img src="img/logo.png" alt="DABCI | Diplomate of the American Board of Chiropractic Internists" />
                         </div>
                     </div>
                 </div>
 
-                <div class="show-for-medium-up medium-6 columns">
+                <div class="medium-6 columns">
                     <div class="row">
                         <div id="nav-desktop-class" class="small-12 columns">
                             <p>Desktop Class Navigation</p>
@@ -49,19 +87,20 @@
             </div>
 
             <div class="row small-collapse">
-                <div id="hero" class="small-12 columns">
-                    <h1>Hero</h1>
+                <div id="hero" style="background-image: url(http://placekitten.com/1000/300)" class="small-12 columns cover-image">
                 </div>
 
             </div>
 
             <div class="row">
                 <div id="featured-story" class="small-12 medium-6 columns">
-                    <p>Featured Story</p>
+                    <h3>DABCI DIPLOMATE PROGRAM</h3>
+                    <p>
+                        The Diplomate of the American Board of Chiropractic Internists (DABCI) seeks to maintain &amp; promote the chiroproactic profession as primary healthcare. DABCI supports the advancement of the chiropractic profession, influences full scope practice within the profession and is involved in current and future health reform legislation.
+                    </p>
                 </div>
 
-                <div id="featured-course" class="small-12 medium-6 columns">
-                    <p>Featured Course</p>
+                <div id="featured-course" style="background-image: url(http://placekitten.com/401/401)" class="small-12 medium-6 columns cover-image">
                 </div>
 
             </div>
@@ -73,7 +112,22 @@
                             <p>Conainer One // Join DABCI</p>
                         </div>
                         <div id="footer-desktop-class" class="show-for-medium-up small-12 columns">
-                            <p>Container One // Desktop Class Footer</p>
+                            <div style="max-width: 50%;" class="float-left">
+                                <img src="img/logo-reversed.png" alt="DABCI | Diplomate of the American Board of Chiropractic Internists" />
+                                <p class="tagline reverse-type">a practitioner educational program powered by ProHealth Seminars&trade;</p>
+                                <p class="tagline reverse-type">sm icons go here</p>
+                            </div>
+                            <div style="max-width: 50%;" class="float-right">
+                                <h6><span class="reverse-type">GET IN TOUCH</span></h6>
+                                <p class="tagline reverse-type">
+                                    720 Oak Knowll Road<br>
+                                    Rolla, MO 65401
+                                </p>
+                                <p class="tagline reverse-type">
+                                    P: +1 573 341 8489<br>
+                                    E: info@dabciseminars.org
+                                </p>
+                            </div>
                         </div>
 
                     </div>
@@ -83,7 +137,10 @@
                 <div id="container-two" class="small-12 medium-2 columns">
                     <div class="row">
                         <div id="kessinger-scholarship" class="small-12 columns">
-                            <p>Container Two // Kessinger Scholarship</p>
+                            <h4><span class="reverse-type">JACK KESSINGER SCHOLARSHIP</span></h4>
+                            <p class="reverse-type">
+                                Dr Jack Kessinger pioneered the DABCI program as we know it today and ProHealth Seminars is continuing his legacy. It is our goal to continue this legacy and share Dr. Jack&rsquo;s vision of ultimate health with everyone we can. If you wish to apply to the Jack Kessinger DABCI Scholarship please download the application here.
+                            </p>
                         </div>
 
                     </div>
@@ -92,7 +149,7 @@
 
                 <div id="container-three" class="small-12 medium-4 columns">
                     <div class="row">
-                        <div id="media-feed" class="small-12 columns">
+                        <div id="media-feed" style="background-image: url(http://placekitten.com/501/501)" class="small-12 columns cover-image">
                             <p>Container Three // Media Feed</p>
                         </div>
 
